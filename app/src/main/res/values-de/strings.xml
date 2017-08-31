@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Doku-Fitness</string>
+    <string name="action_sign_in">Anmelden oder Regristieren</string>
+    <string name="duration">Dauer: %1$s</string>
+    <string name="loginWithGoogle">Bitte mit einem <u>Google-Konto</u> anmelden, um zu beginnen.</string>
+    <string name="reps">Wiederholungen: %1$s</string>
+    <string name="sets">Sätze: %1$s</string>
+    <string name="tool">Fitness-Gerät</string>
+    <string name="select_tool">Wähle Übung..</string>
+</resources>

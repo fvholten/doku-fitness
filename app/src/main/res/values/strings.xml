@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Doku-Fitness</string>
+
+    <string name="action_sign_in">Sign in or register</string>
+
+
+    <string name="loginWithGoogle">To start, please login with your <u>Google-Account.</u></string>
+    <string name="tool">Fitness-Tool</string>
+    <string name="reps">Reps: %1$s</string>
+    <string name="reps_text">Reps</string>
+    <string name="sets">Sets: %1$s</string>
+    <string name="sets_text">Sets</string>
+    <string name="duration">Duration: %1$s</string>
+    <string name="duration_text">Duration</string>
+    <string name="select_tool">Select tool..</string>
+    <string name="start_session">Start a session.</string>
+    <string name="add_exercise">Add exercise</string>
+    <string name="logout">Logout</string>
+    <string name="action_search">Search</string>
+    <string name="click_to_continue">Click to <b>Continue</b></string>
+    <string name="click_to_add">Click to <b>Add</b></string>
+
+    <!-- Font -->
+    <string name="roboto_regular">sans-serif</string>
+    <string name="roboto_light">sans-serif-light</string>
+    <string name="roboto_condensed">sans-serif-condensed</string>
+    <string name="roboto_thin">sans-serif-thin</string>
+    <string name="roboto_medium">sans-serif-medium</string>
+
+    <string name="number_picker_formatter">%02d</string>
+
+
+</resources>

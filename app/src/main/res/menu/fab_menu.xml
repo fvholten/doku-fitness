@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_session"
+        android:icon="@drawable/ic_play_circle_outline_black_24px"
+        android:title="@string/start_session" />
+    <item
+        android:id="@+id/action_exercise"
+        android:icon="@drawable/ic_fitness_center_black_24px"
+        android:title="@string/add_exercise" />
+</menu>

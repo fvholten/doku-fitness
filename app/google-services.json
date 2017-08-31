@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "681398032649",
+    "firebase_url": "https://doku-training.firebaseio.com",
+    "project_id": "doku-training",
+    "storage_bucket": "doku-training.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681398032649:android:03412a38e647bdb4",
+        "android_client_info": {
+          "package_name": "com.dokufitness.finnvonholten.doku_fitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "681398032649-c13eu105r3bcb2bu9hvhob2egka33utc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dokufitness.finnvonholten.doku_fitness",
+            "certificate_hash": "b5fd43c675b65d33471e7a7228710d5d5034cdaf"
+          }
+        },
+        {
+          "client_id": "681398032649-snteo9ug8kh7jp7gv9s6lm4l055cs2qt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfOXM4m0NgpEDESKXf4ialKRVek_JgnI0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "681398032649-snteo9ug8kh7jp7gv9s6lm4l055cs2qt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
