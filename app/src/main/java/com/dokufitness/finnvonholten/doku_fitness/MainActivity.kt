@@ -1,5 +1,6 @@
 package com.dokufitness.finnvonholten.doku_fitness
 
+import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -20,6 +21,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import io.github.yavski.fabspeeddial.FabSpeedDial
 import io.github.yavski.fabspeeddial.SimpleMenuListenerAdapter
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -43,6 +45,18 @@ class MainActivity : AppCompatActivity() {
         getData()
     }
 
+
+
+    override fun onBackPressed() {
+        val builder = AlertDialog.Builder(this@MainActivity)
+        builder.setTitle(R.string.exit)
+                .setMessage(R.string.closeApp)
+                .setPositiveButton(R.string.yes, { _, _ -> ExitActivity.exitApplication(this@MainActivity) })
+                .setNegativeButton(R.string.no, null)
+        val alert: AlertDialog  = builder.create()
+        alert.show()
+    }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater = menuInflater
         inflater.inflate(R.menu.action_options, menu)
@@ -56,6 +70,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this@MainActivity, LoginActivity::class.java))
             }
         }
+
         return super.onOptionsItemSelected(item)
     }
 

@@ -208,16 +208,4 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <Button
-        android:id="@+id/continueButtonReps"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/scrollView"
-        android:background="@drawable/oval_primary"
-        android:backgroundTint="@color/colorPrimaryDark"
-        android:elevation="2dp"
-        android:text="@string/click_to_continue"
-        android:textAllCaps="false"
-        android:textColor="@color/md_white_1000" />
-
 </RelativeLayout>

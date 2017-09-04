@@ -8,4 +8,21 @@
     <string name="sets">Sätze: %1$s</string>
     <string name="tool">Fitness-Gerät</string>
     <string name="select_tool">Wähle Übung..</string>
+    <string name="reps_text">Wiederholungen</string>
+    <string name="duration_text">Dauer</string>
+    <string name="sets_text">Sätze</string>
+    <string name="start_session">Starte das Training</string>
+    <string name="add_exercise">Füge eine Übung hinzu</string>
+    <string name="logout">Abmelden</string>
+    <string name="action_search">Suche</string>
+    <string name="click_to_add">Zum <b>hinzufügen</b> klicken</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="closeApp">Möchtest du die App wirklich schließen?</string>
+    <string name="exit">Schließen</string>
+    <string name="abortCreation">Möchtest du die Erstellung der Aktivität wirklich abbrechen?</string>
+    <string name="abort">Abbrechen</string>
+    <string name="continue_b"><b>Weiter</b></string>
+    <string name="back_b"><b>Zurück</b></string>
+    <string name="finish"><b>Fertig</b></string>
 </resources>

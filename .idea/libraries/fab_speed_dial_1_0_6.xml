@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="fab-speed-dial-1.0.6">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/fab-speed-dial-1.0.6.aar/e6309848ec56f06571124019da20678a/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/fab-speed-dial-1.0.6.aar/e6309848ec56f06571124019da20678a/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/fab-speed-dial-1.0.6.aar/782d2a3ba0376c30109ee8432b4076ad/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/fab-speed-dial-1.0.6.aar/782d2a3ba0376c30109ee8432b4076ad/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
