@@ -1,6 +1,5 @@
 package com.dokufitness.finnvonholten.doku_fitness
 
-
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
@@ -14,7 +13,6 @@ class ExitActivity : Activity() {
     }
 
     companion object {
-
         fun exitApplication(context: Context) {
             val intent = Intent(context, ExitActivity::class.java)
 

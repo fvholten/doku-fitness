@@ -32,10 +32,16 @@
     <string name="number_picker_formatter" translatable="false">%02d</string>
     <string name="yes">Yes</string>
     <string name="closeApp">Do you really want to close the App?</string>
+    <string name="deleteData">Do you really want to delete this activity?</string>
     <string name="no">No</string>
     <string name="exit">Quit</string>
-    <string name="abortCreation">Do you really want to abort the creation of the activitiy?</string>
+    <string name="delete">Delete data</string>
+    <string name="abortCreation">Do you really want to abort the creation of the activity?</string>
     <string name="abort">Abort</string>
+    <string name="reps_and_sets">Reps and Sets</string>
+    <string name="rating">Rating</string>
+    <string name="edit_hl">Edit</string>
+    <string name="backToMain">Back to Feed</string>
 
 
 </resources>

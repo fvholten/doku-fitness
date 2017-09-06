@@ -39,6 +39,7 @@
             android:layout_height="wrap_content"
             ads:adSize="BANNER"
             ads:adUnitId="ca-app-pub-6535721350676948/8079129528" />
+
     </LinearLayout>
 
     <io.github.yavski.fabspeeddial.FabSpeedDial

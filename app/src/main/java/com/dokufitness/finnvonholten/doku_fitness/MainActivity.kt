@@ -23,14 +23,11 @@ import io.github.yavski.fabspeeddial.FabSpeedDial
 import io.github.yavski.fabspeeddial.SimpleMenuListenerAdapter
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), FitnessAdapter.OnEditClickListener {
 
     private val user = FirebaseAuth.getInstance().currentUser
-
     private var recyclerView: RecyclerView? = null
-
     private var dataSnapshot: DataSnapshot? = null
-
     private var fitnessElementList: MutableList<FitnessElement>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,12 +37,9 @@ class MainActivity : AppCompatActivity() {
         (findViewById<View>(R.id.adView) as AdView).loadAd(AdRequest.Builder()
                 .addTestDevice("D0B7DE1E149C08D3A1BF36DD1549A38C")
                 .build())
-
         createRecyclerView()
         getData()
     }
-
-
 
     override fun onBackPressed() {
         val builder = AlertDialog.Builder(this@MainActivity)
@@ -70,14 +64,13 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this@MainActivity, LoginActivity::class.java))
             }
         }
-
         return super.onOptionsItemSelected(item)
     }
 
     private fun createRecyclerView() {
         recyclerView = findViewById(R.id.feed)
-        recyclerView!!.layoutManager = LinearLayoutManager(this)
-        recyclerView!!.itemAnimator = DefaultItemAnimator()
+        recyclerView?.layoutManager = LinearLayoutManager(this)
+        recyclerView?.itemAnimator = DefaultItemAnimator()
     }
 
     private fun getData() {
@@ -133,13 +126,35 @@ class MainActivity : AppCompatActivity() {
         for (userSnap in dataSnapshot.child("Users").children)
             if (userSnap.key == user!!.uid)
                 for (timestampSnap in userSnap.children) {
-                    val fitnessElement = FitnessElement()
+                    val fitnessElement = FitnessElement(timestamp = timestampSnap.key)
                     for (content in timestampSnap.children)
                         setValues(fitnessElement, content)
-                    fitnessElementList?.add(fitnessElement)
+                    fitnessElementList?.add(0, fitnessElement)
                 }
         findViewById<View>(R.id.dataLoad_progress).visibility = View.GONE
 
-        recyclerView!!.adapter = FitnessAdapter(fitnessElementList as ArrayList<FitnessElement>, this)
+        val fitnessAdapter = FitnessAdapter(fitnessElementList as ArrayList<FitnessElement>, this, FirebaseDatabase.getInstance().reference, user!!.uid)
+        fitnessAdapter.setOnEditClickedListener(this)
+        recyclerView?.adapter = fitnessAdapter
+    }
+
+    override fun EditClicked(fitnessElement: FitnessElement) {
+        setContentView(R.layout.edit_view)
+        findViewById<View>(R.id.edit_tool).setOnClickListener{
+
+        }
+        findViewById<View>(R.id.edit_duration).setOnClickListener{
+
+        }
+        findViewById<View>(R.id.edit_reps_and_sets).setOnClickListener{
+
+        }
+        findViewById<View>(R.id.edit_rating).setOnClickListener{
+
+        }
+        findViewById<View>(R.id.backToMainActivity).setOnClickListener {
+            finish()
+            startActivity(intent)
+        }
     }
 }

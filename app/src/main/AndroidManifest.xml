@@ -34,8 +34,9 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".ExitActivity"
-            android:theme="@android:style/Theme.NoDisplay"
-            android:autoRemoveFromRecents="true"/>
+            android:autoRemoveFromRecents="true"
+            android:theme="@android:style/Theme.NoDisplay" />
+        <activity android:name=".StartFitnessActivity"/>
     </application>
 
 </manifest>

@@ -25,4 +25,10 @@
     <string name="continue_b"><b>Weiter</b></string>
     <string name="back_b"><b>Zurück</b></string>
     <string name="finish"><b>Fertig</b></string>
+    <string name="deleteData">Möchtest du die Daten der Aktivität wirklich löschen?</string>
+    <string name="delete">Daten löschen</string>
+    <string name="reps_and_sets">Wiederholungen und Sätze</string>
+    <string name="rating">Bewertung</string>
+    <string name="edit_hl">Bearbeiten</string>
+    <string name="backToMain">Zurück zum Feed</string>
 </resources>
